@@ -8,3 +8,9 @@ class TwitterTrendSerializer(serializers.ModelSerializer):
         model = TwitterTrend
         fields = '__all__'
 
+
+class FacebookTrendSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = FacebookTrend
+        fields = '__all__'

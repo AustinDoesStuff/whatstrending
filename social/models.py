@@ -6,7 +6,7 @@ from django.db import models
 
 class TwitterTrend(models.Model):
     name = models.CharField(max_length=50)
-    link = models.CharField
+    link = models.CharField(max_length=500)
 
     def __str__(self):
         return self.name
@@ -20,7 +20,7 @@ class TwitterTrend(models.Model):
 
 class FacebookTrend(models.Model):
     name = models.CharField(max_length=50)
-    link = models.CharField
+    link = models.CharField(max_length=500)
 
     def __str__(self):
         return self.name
