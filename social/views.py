@@ -3,12 +3,13 @@ from __future__ import unicode_literals
 
 from django.http import HttpResponse
 from django.shortcuts import render, get_object_or_404
+from django.views import generic
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import FacebookTrend, TwitterTrend
 from .serializers import FacebookTrendSerializer, TwitterTrendSerializer
-import tweepy
+from .helpers import getTrendingTwitter, createTwitterData
 
 
 class JsonView(APIView):
@@ -27,3 +28,12 @@ class JsonView(APIView):
 
 
 
+class IndexView(generic.ListView):
+    getTrendingTwitter()
+    createTwitterData()
+
+    template_name = "social/index.html"
+    context_object_name = 'latestTweets'
+
+    def get_queryset(self):
+        return TwitterTrend.objects.order_by('-created')[:10]
