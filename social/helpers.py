@@ -30,12 +30,14 @@ def makeNameFriendly(name):
 def createTwitterData():
     trends = getTrendingTwitter()
     count = 0
-    while count < 10:
-        for trend in trends[0]['trending']:
-            name = trend['name']
-            url = trend['url']
-            friendlyName = makeNameFriendly(name)
-            friendlyName = TwitterTrend(name=name, url=url)
-            friendlyName.save()
+    for trend in trends[0]['trends']:
+        name = trend['name']
+        link = trend['url']
+        friendlyName = makeNameFriendly(name)
+        friendlyName = TwitterTrend(name=name, link=link)
+        friendlyName.save()
+        #print(name + ", " + url + "\n")
         count += 1
+        if count == 10:
+            break
     return None

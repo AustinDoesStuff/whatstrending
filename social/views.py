@@ -27,9 +27,7 @@ class JsonView(APIView):
         pass
 
 
-
 class IndexView(generic.ListView):
-    getTrendingTwitter()
     createTwitterData()
 
     template_name = "social/index.html"

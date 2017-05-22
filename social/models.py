@@ -5,7 +5,7 @@ from django.db import models
 
 
 class TwitterTrend(models.Model):
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=160)
     link = models.CharField(max_length=500)
     created = models.DateTimeField('date published')
 
