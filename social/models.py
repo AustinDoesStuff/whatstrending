@@ -11,11 +11,6 @@ class TwitterTrend(models.Model):
     def __str__(self):
         return self.name
 
-    """def findOnTwitter(name):
-        if name[0] == "#":
-            return "https://social.com/hashtag/%s" % name
-        else:
-            return "https://social.com/search?q=%s" % name"""
 
 
 class FacebookTrend(models.Model):
@@ -24,6 +19,3 @@ class FacebookTrend(models.Model):
 
     def __str__(self):
         return self.name
-
-"""def findOnFacebook(name):
-    pass"""

@@ -1,5 +1,5 @@
 import tweepy
-import json
+from .models import TwitterTrend, FacebookTrend
 
 
 #login to twitter
@@ -20,9 +20,21 @@ def getTrendingTwitter():
     return trends
 
 
-def createTrends():
-    trends = getTrendingTwitter()
+def makeNameFriendly(name):
+    if name[0] == "#":
+        return name[1:]
+    else:
+        return name.replace(" ", "")
 
-    for trend in trends[0]['trending']:
-        name = trend['name']
-        url = trend['url']
+def createTwitterData():
+    trends = getTrendingTwitter()
+    count = 0
+
+    while count < 10:
+        for trend in trends[0]['trending']:
+            name = trend['name']
+            url = trend['url']
+            friendlyName = makeNameFriendly(name)
+            friendlyName = TwitterTrend(name=name, url=url)
+            friendlyName.save()
+            count+=1
