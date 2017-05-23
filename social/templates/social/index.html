@@ -8,7 +8,7 @@
     {% if latestTweets %}
     <ul>
         {% for twittertrend in latestTweets %}
-            <li><a href="{% twittertrend.link %}">{{ twittertrend.name }}</a></li>
+            <li><a href="{ twittertrend.link }">{{ twittertrend.name }}</a></li>
         {% endfor %}
     </ul>
     {% else %}

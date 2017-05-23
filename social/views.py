@@ -9,7 +9,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import FacebookTrend, TwitterTrend
 from .serializers import FacebookTrendSerializer, TwitterTrendSerializer
-from .helpers import getTrendingTwitter, createTwitterData
+from .helpers import createTwitterData
 
 
 class JsonView(APIView):
