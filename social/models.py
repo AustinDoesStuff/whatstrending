@@ -1,23 +1,23 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from django.db import models
+from mongoengine import Document, fields
 
 
-class TwitterTrend(models.Model):
-    name = models.CharField(max_length=160)
-    link = models.CharField(max_length=500)
-    created = models.DateTimeField('date published')
+class TwitterTrend(Document):
+    name = fields.StringField(max_length=160)
+    link = fields.StringField(max_length=500)
+    created = fields.DateTimeField()
 
     def __str__(self):
         return self.name
 
 
 
-class FacebookTrend(models.Model):
-    name = models.CharField(max_length=50)
-    link = models.CharField(max_length=500)
-    created = models.DateTimeField('date published')
+class FacebookTrend(Document):
+    name = fields.StringField(max_length=50)
+    link = fields.StringField(max_length=160)
+    created = fields.DateTimeField()
 
     def __str__(self):
         return self.name

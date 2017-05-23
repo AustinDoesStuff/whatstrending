@@ -27,11 +27,8 @@ class JsonView(APIView):
         pass
 
 
-class IndexView(generic.ListView):
+def index(request):
     createTwitterData()
-
-    template_name = "social/index.html"
-    context_object_name = 'latestTweets'
-
-    def get_queryset(self):
-        return TwitterTrend.objects.order_by('-created')[:10]
+    latestTweets = TwitterTrend.objects.order_by('-created')[:10]
+    context = {'latestTweets': latestTweets}
+    return render(request, 'social/index.html', context)
