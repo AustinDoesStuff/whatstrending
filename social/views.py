@@ -20,7 +20,7 @@ class JsonView(APIView):
         fbSerializer = FacebookTrendSerializer(fbtrends, many=True)
         twitterSerializer = TwitterTrendSerializer(twittertrends, many=True)
 
-        return Response(fbSerializer.data)
+        return Response(twitterSerializer.data)
 
 
     def post(self):

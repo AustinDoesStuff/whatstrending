@@ -19,7 +19,7 @@ from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'index/', include('social.urls'))
+    url(r'', include('social.urls'))
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)

@@ -5,14 +5,15 @@
     <title>What's Trending</title>
 </head>
 <body>
+    <h2>What's Trending on Twitter</h2>
     {% if latestTweets %}
     <ul>
         {% for twittertrend in latestTweets %}
-            <li><a href="{ twittertrend.link }">{{ twittertrend.name }}</a></li>
+            <li><a href="{{ twittertrend.link }}">{{ twittertrend.name }}</a></li>
         {% endfor %}
     </ul>
     {% else %}
-        <p>Oops. Something broke</p>
+        <p>Oops. Something broke with Twitter</p>
     {% endif %}
 </body>
 </html>
