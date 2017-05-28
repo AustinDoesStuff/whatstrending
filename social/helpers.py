@@ -1,5 +1,6 @@
 import tweepy
-from .models import TwitterTrend, FacebookTrend
+import praw
+from .models import TwitterTrend, FacebookTrend, RedditTrend
 
 
 #login to twitter
@@ -36,8 +37,27 @@ def createTwitterData():
         friendlyName = makeNameFriendly(name)
         friendlyName = TwitterTrend(name=name, link=link)
         friendlyName.save()
-        #print(name + ", " + url + "\n")
         count += 1
         if count == 10:
             break
-    return None
+
+
+def createRedditData():
+    reddit = praw.Reddit(user_agent='Whats Trending (by /u/NOB0DYx)',
+                         client_id='zVLHSJJwjiqfhg',
+                         client_secret="s8HlmR6SDDjCJwO1KLMxEsyTa5U",
+                         username='NOB0DYx',
+                         password='4643937a',
+                         read_only=True)
+
+    for submission in reddit.subreddit('all').hot(limit=10):
+        newSubmission = RedditTrend(name=submission.title,
+                                    link=submission.url,
+                                    user=submission.author)
+
+        newSubmission.save()
+
+
+def createAllData():
+    createTwitterData()
+    createRedditData()

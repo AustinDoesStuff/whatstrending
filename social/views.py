@@ -7,9 +7,9 @@ from django.views import generic
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from .models import FacebookTrend, TwitterTrend
+from .models import FacebookTrend, TwitterTrend, RedditTrend
 from .serializers import FacebookTrendSerializer, TwitterTrendSerializer
-from .helpers import createTwitterData
+from .helpers import createAllData
 
 
 class JsonView(APIView):
@@ -28,7 +28,8 @@ class JsonView(APIView):
 
 
 def index(request):
-    createTwitterData()
+    createAllData()
     latestTweets = TwitterTrend.objects.order_by('-created')[:10]
-    context = {'latestTweets': latestTweets}
+    latestReddit = RedditTrend.objects.order_by('-created')[:10]
+    context = {'latestTweets': latestTweets, 'latestReddit': latestReddit}
     return render(request, 'social/index.html', context)

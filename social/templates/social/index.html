@@ -15,5 +15,17 @@
     {% else %}
         <p>Oops. Something broke with Twitter</p>
     {% endif %}
+    <br/>
+    <br/>
+    <h2>What's Trending on Reddit</h2>
+    {% if latestReddit %}
+    <ul>
+        {% for post in latestReddit %}
+            <li><a href="{{ post.link }}">{{ post.name }}</a>, submitted by <a href="https://reddit.com/u/{{ post.user }}">{{ post.user }}</a> </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+        <p>Oops. Something broke with Twitter</p>
+    {% endif %}
 </body>
 </html>
