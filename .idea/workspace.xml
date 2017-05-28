@@ -2,30 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="06f20616-9cb7-4e60-b5ab-c91f23bd7f4e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0002_auto_20170520_1353.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0003_auto_20170523_0458.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0004_facebooktrend_twittertrend.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0005_auto_20170523_1842.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0006_auto_20170523_1421.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0007_auto_20170523_1423.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0008_auto_20170523_1425.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0009_auto_20170523_1427.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0010_auto_20170523_1430.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0011_auto_20170523_1450.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0012_auto_20170523_1452.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0013_auto_20170523_1454.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0014_auto_20170523_1456.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0015_auto_20170523_1456.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0016_auto_20170523_1500.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0017_auto_20170523_1507.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0018_auto_20170523_1510.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social/migrations/0019_auto_20170523_1512.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mydatabase" afterPath="$PROJECT_DIR$/mydatabase" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social/helpers.py" afterPath="$PROJECT_DIR$/social/helpers.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social/models.py" afterPath="$PROJECT_DIR$/social/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social/templates/social/index.html" afterPath="$PROJECT_DIR$/social/templates/social/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social/serializers.py" afterPath="$PROJECT_DIR$/social/serializers.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/social/views.py" afterPath="$PROJECT_DIR$/social/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +18,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/social/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+            <state relative-caret-position="341">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -131,8 +108,8 @@
       <file leaf-file-name="serializers.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/social/serializers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="15">
+              <caret line="1" column="60" lean-forward="false" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
               </folding>
@@ -158,7 +135,6 @@
       <list>
         <option value="$PROJECT_DIR$/twitter/models.py" />
         <option value="$PROJECT_DIR$/twitter/admin.py" />
-        <option value="$PROJECT_DIR$/social/serializers.py" />
         <option value="$PROJECT_DIR$/social/apps.py" />
         <option value="$PROJECT_DIR$/.git/info/exclude" />
         <option value="$PROJECT_DIR$/social/urls.py" />
@@ -168,6 +144,7 @@
         <option value="$PROJECT_DIR$/social/models.py" />
         <option value="$PROJECT_DIR$/social/templates/social/index.html" />
         <option value="$PROJECT_DIR$/social/helpers.py" />
+        <option value="$PROJECT_DIR$/social/serializers.py" />
         <option value="$PROJECT_DIR$/social/views.py" />
       </list>
     </option>
@@ -358,6 +335,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="27" y="23" width="1400" height="757" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16936672" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -366,7 +344,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932332" sideWeight="0.4970545" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32932332" sideWeight="0.4970545" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298969" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -799,16 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/social/serializers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/social/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -824,14 +792,6 @@
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/whatsTrending/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1052">
-          <caret line="107" column="28" lean-forward="false" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -863,10 +823,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/social/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="60" lean-forward="false" selection-start-line="1" selection-start-column="60" selection-end-line="1" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/whatsTrending/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1052">
+          <caret line="107" column="28" lean-forward="false" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/social/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="33" column="60" lean-forward="false" selection-start-line="33" selection-start-column="60" selection-end-line="33" selection-end-column="60" />
+        <state relative-caret-position="341">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>

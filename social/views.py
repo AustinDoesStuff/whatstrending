@@ -8,23 +8,26 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from .models import FacebookTrend, TwitterTrend, RedditTrend
-from .serializers import FacebookTrendSerializer, TwitterTrendSerializer
+from .serializers import FacebookTrendSerializer, TwitterTrendSerializer, RedditTrendSerializer
 from .helpers import createAllData
 
 
-class JsonView(APIView):
+class TwitterJsonView(APIView):
 
     def get(self, request):
-        fbtrends = FacebookTrend.objects.all()
         twittertrends = TwitterTrend.objects.all()
-        fbSerializer = FacebookTrendSerializer(fbtrends, many=True)
         twitterSerializer = TwitterTrendSerializer(twittertrends, many=True)
 
         return Response(twitterSerializer.data)
 
 
-    def post(self):
-        pass
+class RedditJsonView(APIView):
+
+    def get(self, request):
+        reddittrends = RedditTrend.objects.all()
+        redditSerializer = RedditTrendSerializer(reddittrends, many=True)
+
+        return Response(redditSerializer.data)
 
 
 def index(request):
