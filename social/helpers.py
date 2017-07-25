@@ -5,10 +5,10 @@ from .models import TwitterTrend, FacebookTrend, RedditTrend
 
 #login to twitter
 
-twitterKey = "o5lfqT90lF9eaiXrikXXdw2o0"
-twitterSecret = "8HplZfUMPmZ0yHIdtWdLeLy3FWODfyWTuOu6yA55DGEc8dE5YK"
-twitterAccessToken = "809565371695034368-WoO437rm0eFuPIRx9LpyE90RTMfU7Dv"
-twitterAccessSecret = "QR8GN5yWWcUn7FDvMvrVAX093clDrv1ls41lcoLmvzyj1"
+twitterKey = "[redacted]"
+twitterSecret = "[redacted]"
+twitterAccessToken = "[redacted]"
+twitterAccessSecret = "[redacted]"
 
 twitterAuth = tweepy.OAuthHandler(twitterKey, twitterSecret)
 twitterAuth.set_access_token(twitterAccessToken, twitterAccessSecret)
@@ -43,11 +43,11 @@ def createTwitterData():
 
 
 def createRedditData():
-    reddit = praw.Reddit(user_agent='Whats Trending (by /u/NOB0DYx)',
-                         client_id='zVLHSJJwjiqfhg',
-                         client_secret="s8HlmR6SDDjCJwO1KLMxEsyTa5U",
-                         username='NOB0DYx',
-                         password='4643937a',
+    reddit = praw.Reddit(user_agent='Whats Trending (by "[redacted]")',
+                         client_id= "[redacted]",
+                         client_secret= "[redacted]",
+                         username= "[redacted]",
+                         password= "[redacted]",
                          read_only=True)
 
     for submission in reddit.subreddit('all').hot(limit=10):
